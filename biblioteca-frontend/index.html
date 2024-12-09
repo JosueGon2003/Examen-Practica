@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Biblioteca</title>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-indigo-50 font-sans">
+
+  <div class="container mx-auto p-5">
+
+    <div id="home-container" class="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-xl shadow-2xl animate__animated animate__fadeIn">
+      <div class="text-center">
+
+      <h1 class=" items-center justify-center text-6xl font-extrabold mb-6 animate__animated animate__fadeIn animate__delay-1s animate__infinite animate__pulse">Bienvenido al Sistema de Biblioteca</h1>
+      <p class="text-lg mb-6 animate__animated animate__fadeInUp">Gestiona libros, revistas y préstamos con facilidad. ¡Comienza ahora!</p>
+      <button id="enter-button" class="px-8 py-4 text-lg bg-yellow-500 hover:bg-yellow-600 text-white rounded-full shadow-xl transform hover:scale-110 focus:outline-none transition duration-300 ease-in-out animate__animated animate__pulse animate__infinite">Comenzar</button>
+    </div>
+
+    </div>
+
+    <nav id="navbar" class="hidden bg-gradient-to-r from-indigo-700 to-blue-900 shadow-xl p-5 rounded-xl mb-6">
+      <div class="navbar navbar-expand-lg navbar-light">
+        <a href="#" class="text-white text-3xl font-semibold hover:text-gray-300 transition duration-300">Sistema de Biblioteca</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto space-x-4 md:space-x-6">
+            <li class="nav-item">
+              <button id="nav-libros" class="px-4 py-3 text-white bg-green-600 hover:bg-green-700 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300 transform hover:scale-105">Libros</button>
+            </li>
+            <li class="nav-item">
+              <button id="nav-estudiantes" class="px-4 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105">Estudiantes</button>
+            </li>
+            <li class="nav-item">
+              <button id="nav-prestamos" class="px-4 py-3 text-white bg-yellow-600 hover:bg-yellow-700 rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300 transform hover:scale-105">Préstamos</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="libros-container" class="mb-10 hidden animate__animated animate__fadeInUp"></div>
+    <div id="estudiantes-container" class="mb-10 hidden animate__animated animate__fadeInUp"></div>
+    <div id="prestamos-container" class="mb-10 hidden animate__animated animate__fadeInUp"></div>
+
+    <footer class="mt-10 text-center text-gray-600">
+      <p class="text-sm">&copy; 2024 Sistema de Biblioteca | Todos los derechos reservados</p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
